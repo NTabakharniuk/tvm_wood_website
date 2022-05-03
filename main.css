@@ -10,8 +10,6 @@
 
 nav {
     width: 100%;
-    position: fixed;
-    height: 100px;
     margin-left: 10%;
 }
 
@@ -32,13 +30,16 @@ button {
 }
 
 header {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5%;
+    padding: 20px;
+    padding-top: 30px;
     background-color: rgb(37, 37, 37);
-    position: absolute;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 body {
@@ -70,18 +71,16 @@ a:hover {
 }
 
 .buy {
-    margin-left: 10%;
-    height: 3%;
-    border: none;
     background: #161718;
     color: cornsilk;
-    padding: 1%;
     font-size: 18px;
     border-radius: 5px;
-    position: relative;
-    box-sizing: border-box;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    height: 50px;
     transition: all 500ms ease;
-    padding: 1% 4%;
+    padding: 10px 40px;
     overflow: hidden;
     z-index: 20;
 }
