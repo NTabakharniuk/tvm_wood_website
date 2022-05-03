@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Зробити замовлення</title>
+</head>
+
+<body bgcolor="grey">
+    <div class="wrapper_order">
+        <div class="form">
+            <form action="mail.php" id="form" class="form_body" method="POST">
+                <h1 class="form_title">Оформлення замовлення</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Прізвище Ім'я Побатькові*:</label>
+                    <input type="text" name="name" id="formName" class="form_input">
+                </div>
+                <div class="form_item">
+                    <label for="formNumber" class="form_label">Номер телефону*:</label>
+                    <input type="text" name="phone" id="formNumber" class="form_input"
+                        placeholder="+380 (97) 000 00 00">
+                </div>
+                <div class="form_item">
+                    <label for="formModel" class="form_label">Номер моделі</label>
+                    <input type="text" name="model" id="formModel" class="form_input"
+                        placeholder="Наприклад: Z-01, Z-07...">
+                    <!-- <select multiple name="model" id="">
+                            <option value="1">Z-01</option>
+                            <option value="2">Z-02</option>
+                            <option value="3">Z-03</option>
+                            <option value="4">Z-04</option>
+                            <option value="5">Z-05</option>
+                            <option value="6">Z-06</option>
+                            <option value="7">Z-07</option>
+                            <option value="8">Z-08</option>
+                            <option value="9">Z-09</option>
+                            <option value="10">Z-10</option>
+                        </select> -->
+                </div>
+                <div class="form_item">
+                    <label for="formMaterial" class="form_label">Матеріал </label>
+                    <select name="material" id="formMaterial" class="form_input">
+                        <option value="1">Дуб</option>
+                        <option value="2">Бук</option>
+                        <option value="3">Ясень</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="formAddress" class="form_label">Адреса</label>
+                    <select name="address" id="formAddress" class="form_input">
+                        <option value="1" Вінницька область="">Вінницька область</option>
+                        <option value="2" Волинська область="">Волинська область</option>
+                        <option value="3" Дніпропетровська область="">Дніпропетровська область</option>
+                        <option value="4" Донецька область="">Донецька область</option>
+                        <option value="5" Житомирська область="">Житомирська область</option>
+                        <option value="6" Закарпатська область="">Закарпатська область</option>
+                        <option value="7" Запорізька область="">Запорізька область</option>
+                        <option value="8" Івано-Франківська область="">Івано-Франківська область</option>
+                        <option value="9" Київська область="">Київська област</option>
+                        <option value="10" Кіровоградська область="">Кіровоградська область</option>
+                        <option value="11" Луганська область="">Луганська область</option>
+                        <option value="12" Львівська область="">Львівська область</option>
+                        <option value="13" Миколаївська область="">Миколаївська область</option>
+                        <option value="14" Одеська область="">Одеська область</option>
+                        <option value="15" Полтавська область="">Полтавська область</option>
+                        <option value="16" Рівненська область="">Рівненська область</option>
+                        <option value="17" Сумська область="">Сумська область</option>
+                        <option value="18" Тернопільська область="">Тернопільська область</option>
+                        <option value="19" Харківська область="">Харківська область</option>
+                        <option value="20" Херсонська область="">Херсонська область</option>
+                        <option value="21" Хмельницька область="">Хмельницька область</option>
+                        <option value="22" Черкаська область="">Черкаська область</option>
+                        <option value="23" Чернівецька область="">Чернівецька область</option>
+                        <option value="24" Чернігівська область="">Чернігівська область</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="formRegion" class="form_label">Район</label>
+                    <input type="text" name="region" id="formRegion" class="form_input"
+                        placeholder="Наприклад, Косівський район">
+                </div>
+                <div class="form_item">
+                    <label for="formCity" class="form_label">Населений пункт</label>
+                    <input type="text" name="city" id="formCity" class="form_input">
+                </div>
+                <div class="form_item">
+                    <label for="formDepartment" class="form_label">№Відділення Нової Пошти</label>
+                    <input type="text" name="department" id="formDepartment" class="form_input">
+                </div>
+                <div class="form_item">
+                    <label for="formComment" class="form_label">Додайте власний коментар</label>
+                    <textarea name="comment" id="formComment" cols="30" rows="10" class="form_input"
+                        placeholder="Якщо маєте якісь побажання, пишіть сюди"></textarea>
+                </div>
+                <button class="form_button" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
