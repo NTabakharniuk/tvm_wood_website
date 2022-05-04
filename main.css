@@ -48,8 +48,8 @@ body {
   min-width: 1170px;
   max-width: 2000px;
   margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
 }
 
 .nav_links li {
@@ -102,6 +102,7 @@ a:hover {
 
 .home img {
   width: 100%;
+  position: relative;
 }
 
 .assortment_text {
@@ -247,6 +248,7 @@ p {
 
 footer {
   height: 200px;
+  width: 1425px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,6 +265,7 @@ footer {
 
 main {
   flex: 1 1 auto;
+  width: 1425px;
 }
 
 .footer_nav_links a {
