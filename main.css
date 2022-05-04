@@ -187,14 +187,15 @@ p {
 }
 
 .about_text {
-  width: 400px;
-  margin-top: 200px;
+  width: 800px;
+  margin-top: 50px;
+  margin-left: 20px;
   font-size: 20px;
 }
 
 .wrapper_about {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .location {
@@ -284,7 +285,6 @@ main {
   line-height: 2;
   font-size: 14px;
   background-color: rgb(37, 37, 37);
-  
 }
 
 .form {
