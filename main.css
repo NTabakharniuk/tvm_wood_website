@@ -48,8 +48,6 @@ body {
   min-width: 1170px;
   max-width: 2000px;
   margin: 0;
-  /* font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
 }
 
 .nav_links li {
@@ -118,14 +116,7 @@ p {
   text-align: center;
 }
 
-.col {
-  width: 1420px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-}
-
-.col2 img {
+.col img {
   width: 350px;
   display: flex;
   display: inline-block;
@@ -133,7 +124,7 @@ p {
   text-align: center;
 }
 
-.col2 {
+.col {
   width: 1420px;
   margin-left: auto;
   margin-right: auto;
@@ -144,14 +135,16 @@ p {
   transition: 1s;
 }
 
-.img-scale:hover {
+.col img:hover{
   transform: scale(1.2);
+  transition: 1s;
 }
 
 .wrapper_carousel_slade {
   width: 350px;
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 .more_information {
@@ -247,16 +240,6 @@ p {
   margin-bottom: 30px;
 }
 
-footer {
-  height: 200px;
-  width: 1425px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5% 5%;
-  background-color: rgb(37, 37, 37);
-  margin-top: 60px;
-}
 
 .wrapper {
   min-height: 100%;
@@ -267,6 +250,8 @@ footer {
 main {
   flex: 1 1 auto;
   width: 1425px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer_nav_links a {
@@ -277,6 +262,16 @@ main {
 
 .footer_nav_links {
   line-height: 50px;
+}
+footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5%;
+  background-color: rgb(37, 37, 37);
+  margin-top: 60px;
 }
 
 /* Оформлення файлу "order.html" */
