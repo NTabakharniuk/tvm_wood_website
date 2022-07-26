@@ -273,6 +273,17 @@ footer {
   background-color: rgb(37, 37, 37);
   margin-top: 60px;
 }
+.callback {
+  width: 200px;
+  height: 50px;
+  color: blue;
+  position: fixed;
+  margin-top: 200px;
+  display: flex;
+  z-index: 20;
+  background-color: #161718;
+  border-radius: 50px;
+}
 
 /* Оформлення файлу "order.html" */
 .wrapper_order {
@@ -315,6 +326,9 @@ textarea .form_input {
 .form_button:hover {
   color: rgb(95, 92, 90);
   transition: 1.2s;
+}
+.form_input._error{
+  box-shadow: red;
 }
 
 /* Кінець оформлення " order.html" */

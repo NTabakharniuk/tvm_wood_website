@@ -15,11 +15,11 @@
             <form action="https://formspree.io/f/mwkywydq" id="form" class="form_body" method="POST">
                 <h1 class="form_title">Оформлення замовлення</h1>
                 <div class="form_item">
-                    <label for="formName" class="form_label">Прізвище Ім'я Побатькові*:</label>
+                    <label for="formName" class="form_label _req">Прізвище Ім'я Побатькові*:</label>
                     <input type="text" name="name" id="formName" class="form_input">
                 </div>
                 <div class="form_item">
-                    <label for="formNumber" class="form_label">Номер телефону*:</label>
+                    <label for="formNumber" class="form_label _req">Номер телефону*:</label>
                     <input type="text" name="phone" id="formNumber" class="form_input"
                         placeholder="+380 (97) 000 00 00">
                 </div>
@@ -83,7 +83,7 @@
                     <textarea name="comment" id="formComment" cols="30" rows="10" class="form_input"
                         placeholder="Якщо маєте якісь побажання, пишіть сюди"></textarea>
                 </div>
-                <button class="form_button" type="submit" href="thank-you.html">Відправити</button>
+                <button onclick="myFunction()" class="form_button" type="submit" href="thank-you.html">Відправити</button>
             </form>
         </div>
     </div>
