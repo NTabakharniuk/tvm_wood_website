@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&family=Playfair+Display&display=swap");
-
+/* PC */
+@media (max-width: 1087px){
+  [class*="wrapper"] {
+    max-width: 970px;
+  }
+}
+/* mobile */
+@media (max-width: 767.98px){
+  [class*="wrapper"] {
+    max-width: none;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", cursive;
-  font-family: "Nunito", sans-serif;
-  font-family: "Playfair Display", serif;
+  font-family: "Bebas Neue", cursive; 
+  font-family: "Nunito", sans-serif; 
+   font-family: "Playfair Display", serif; 
 }
 
 nav {
@@ -242,9 +253,11 @@ p {
 
 
 .wrapper {
-  min-height: 100%;
+  /* min-height: 100%; */
   display: flex;
   flex-direction: column;
+  width: 100%;
+  position: relative;
 }
 
 main {
@@ -332,3 +345,127 @@ textarea .form_input {
 }
 
 /* Кінець оформлення " order.html" */
+.open-form-modal-btn{
+  background: #161718;
+  color: cornsilk;
+  font-size: 18px;
+  border-radius: 5px;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  height: 50px;
+  transition: all 500ms ease;
+  padding: 10px 40px;
+  overflow: hidden;
+  z-index: 20;
+
+}
+.open-form-modal-btn:hover{
+  color: rgb(95, 92, 90);
+
+}
+
+.modal-bgd{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(27 29 31 / 70%);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s  ease-in-out;
+}
+
+.modal-form-container{
+    background: #fff;
+    padding: 32px 92px 60px 92px;
+    position: relative;
+    width: 60%;
+    height: 80%;
+    overflow: scroll;
+}
+.modal-form-success{
+   background: #fff;
+    padding: 32px 92px 60px 92px;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-form-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #17181B;
+    margin: 32px 0 12px 0;
+}
+
+.modal-form-fild{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.modal-fild-name{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #17181B;
+}
+.modal-fild-input{
+    border: 1px solid #005BBB;
+    box-sizing: border-box;
+    border-radius: 8px; 
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #17181B;
+    padding: 4px 8px;
+}
+.modal-form-btn{
+    background: rgb(95, 92, 90);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: cornsilk;
+    cursor: pointer;
+    border: 0;
+    margin-top: 24px;
+
+}
+
+.close-btn{
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    font-size: 14px;
+    color: #17181B;
+    cursor: pointer;
+    border: 0;
+    background: none;
+}
+.modal-descriptiion{
+    margin-bottom: 0;
+}
+
+.modal-active{
+    opacity: 1;
+    pointer-events: all;
+}
