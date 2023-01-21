@@ -15,9 +15,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue", cursive; 
+  /* font-family: "Bebas Neue", cursive; 
   font-family: "Nunito", sans-serif; 
-   font-family: "Playfair Display", serif; 
+   font-family: "Playfair Display", serif;  */
+}
+
+body {
+  height: 100%;
+  min-width: 1170px;
+  max-width: 2000px;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 nav {
@@ -52,13 +60,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 10;
-}
-
-body {
-  height: 100%;
-  min-width: 1170px;
-  max-width: 2000px;
-  margin: 0;
 }
 
 .nav_links li {
