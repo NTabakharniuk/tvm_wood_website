@@ -1021,7 +1021,7 @@
           </ul>
         </div>
       </div>
-      
+
     </footer>
 
     <div class="modal-bgd " id="form-modal">
@@ -1035,27 +1035,19 @@
 
           <div class="modal-form-fild">
             <label for="user-name" class="modal-fild-name"> Прізвище Ім'я Побатькові:</label>
-            <input type="text" class="modal-fild-input" id="user-name" name="Ім'я">
+            <input required type="text" class="modal-fild-input" id="user-name" name="Ім'я">
           </div>
 
           <div class="modal-form-fild">
             <label for="user-email" class="modal-fild-name">Номер телефону:</label>
-            <input type="text" class="modal-fild-input" id="user-phone" name="phone" placeholder="+380 (97) 000 00 00">
+            <input required type="text" class="modal-fild-input" id="user-phone" name="phone"
+              placeholder="+380 (97) 000 00 00">
           </div>
 
           <div class="modal-form-fild">
-            <label for="user-inf" class="modal-fild-name">Номер моделі</label>
+            <label for="user-inf" class="modal-fild-name">Замовлення</label>
             <input type="text" class="modal-fild-input" id="form-model" name="model"
-              placeholder="Наприклад: A-01, A-07...">
-          </div>
-
-          <div class="modal-form-fild">
-            <label for="user-inf" class="modal-fild-name">Матеріал</label>
-            <select type="text" class="modal-fild-input" id="form-material" name="material">
-              <option value="Дуб">Дуб</option>
-              <option value="Бук">Бук</option>
-              <option value="Ясень">Ясень</option>
-            </select>
+              placeholder="Напишіть те, що бажаєте замовити">
           </div>
 
           <div class="modal-form-fild">
@@ -1127,6 +1119,7 @@
         <p class="modal-descriptiion">Очікуйте нашого дзвінка</p>
       </div>
     </div>
+    
   </div>
   <script src="./form-site.js"></script>
 </body>
