@@ -469,7 +469,7 @@ footer {
 @media screen and (max-width: 800px) {
   main {
     flex: 1 1 auto; 
-    width: 800px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
