@@ -29,6 +29,7 @@ color: #fff;
 .number{
   background-color: #17181B;
   color: cornsilk;
+  justify-content: center;
 }
 
 nav {
