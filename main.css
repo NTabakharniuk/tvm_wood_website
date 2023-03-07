@@ -26,19 +26,8 @@ main {
 height: 100px;
 color: #fff;
 }
-
-.space-betwen{
- height: 0;
- display: list-item;
- justify-content: center;
- margin: 0;
-
-}
-
-.space-betwen p{
-  color: #7c7c82;
-  margin: 0;
-  text-align: center;
+.number{
+  color: rgb(228, 41, 41);
 }
 
 nav {
