@@ -162,8 +162,13 @@ a:hover {
     background-color: rgb(37, 37, 37);
     animation: burgerAnimation 0.4s;
   }
+  
   .nav_links ul{
     flex-direction: column;
+  }
+
+  .modal-bgd{
+    z-index: 60;
   }
   
 }
